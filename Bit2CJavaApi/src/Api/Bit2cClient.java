@@ -169,9 +169,9 @@ public class Bit2cClient {
         String Url = this.Url + "Order/AddOrder";
 
         HashMap<String, String> params = new HashMap<String, String>();
-        params.put("Amout", String.valueOf(data.Amount.toPlainString()));
+        params.put("Amount", String.valueOf(data.Amount.toPlainString()));
         params.put("IsBid", String.valueOf(data.IsBid));
-        params.put("Pair", String.valueOf(data.Pair.ordinal()));
+        params.put("Pair", String.valueOf(data.Pair));
         params.put("Price", String.valueOf(data.Price.toPlainString()));
         params.put("Total", String.valueOf(data.Total.toPlainString()));
         String response = Query(params, Url);
